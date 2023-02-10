@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class TelaInicialTeste {
 
 	public static void main(String[] args) {
@@ -12,21 +11,40 @@ public class TelaInicialTeste {
 		System.out.print("ESCOLHA A OPÇÃO QUE VOCÊ DESEJA: ");
 		int esc = sc.nextInt();
 		
-		while(esc != 3) {
-			if (esc == 1) {
+		while(esc != 3) { // Até aqui está tudo certo
+			while(esc == 1) {
 				System.out.println();
 				System.out.println("Estoque"); // aqui vai ter um pacote  sobre o estoque
 				System.out.println("Digite 1 para ver cada divisão"); // aqui também vai ter um pacote especifico 
 				System.out.println("Digite 2 para voltar");
 				System.out.print("Sua opção: ");
 				int ope = sc.nextInt();
-				if (ope == 2) {
-					esc = sc.nextInt(); // aqui ta quebrado e ainda não sei como resolver 
+				if (ope == 1) {
+					System.out.println("Estoque"); // aqui ta quebrado e ainda não sei como resolver 
 				}
 				else {
 					System.out.println();
 				}
+				
+				
+				/* int ope;
+				do {
+					System.out.println("-- Estoque --");
+					System.out.println("Digite 1 pra ver cada divisão");
+					System.out.println("Digite 2 para sair");
+					System.out.print("Sua  opção: ");
+					ope = sc.nextInt();
+				} while(ope != 2);*/                   // Não funciona assim
 			}
+			    
+			
+			
+			
+			
+			
+			
+			
+			
 			if (esc == 2) {
 				System.out.println("1 - ADCIONAR");
 				System.out.println("2 - RETIRAR");
@@ -37,20 +55,6 @@ public class TelaInicialTeste {
 		
 		
 		System.out.println("Muito obrigado! Até Breve");
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		sc.close();
 	}
